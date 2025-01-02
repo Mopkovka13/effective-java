@@ -1,0 +1,2 @@
+# effective-java
+my notes
