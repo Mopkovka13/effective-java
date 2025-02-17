@@ -4,6 +4,11 @@
 ```
 <configuration>
 
+    <appender name="COLORED_CONSOLE" class="ch.qos.logback.core.ConsoleAppender">
+        <encoder class="ch.qos.logback.classic.encoder.PatternLayoutEncoder">
+            <pattern>%d{yyyy-MM-dd HH:mm:ss.SSS} %highlight([%thread]) %cyan(%-5level) %logger{36} - %msg%n%ex</pattern>
+        </encoder>
+    </appender>
     <!-- Консольный аппендер для вывода в терминал -->
     <appender name="CONSOLE" class="ch.qos.logback.core.ConsoleAppender">
         <encoder>
